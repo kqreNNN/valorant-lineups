@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>VALORANT 定点まとめ</title>
+  <style>
+    body { background: #0e0e0e; color: white; font-family: sans-serif; margin: 0; padding: 2rem; }
+    h1, h2, h3, h4 { margin-top: 2rem; }
+    ul { list-style: none; padding: 0; }
+    li { margin: 0.25rem 0; }
+    a { color: #00ffff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img, video { max-width: 100%; height: auto; margin: 1rem 0; border: 1px solid #333; border-radius: 8px; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div id="main" class="hidden">
+    <h1>🎯 VALORANT 定点まとめ</h1>
+    <ul>
+      <li><a href="#ascent">アセント</a></li>
+      <li><a href="#split">スプリット</a></li>
+      <li><a href="#haven">ヘイブン</a></li>
+      <li><a href="#icebox">アイスボックス</a></li>
+      <li><a href="#pearl">パール</a></li>
+      <li><a href="#fracture">フラクチャー</a></li>
+      <li><a href="#lotus">ロータス</a></li>
+      <li><a href="#bind">バインド</a></li>
+      <li><a href="#breeze">ブリーズ</a></li>
+      <li><a href="#sunset">サンセット</a></li>
+      <li><a href="#abyss">アビス</a></li>
+    </ul>
+
+    <!-- MAP SECTION: ASCENT EXAMPLE -->
+    <h2 id="ascent">🗺️ アセント</h2>
+    <h3>🅰️ アタッカー</h3>
+    <ul>
+      <li><a href="#ascent-sova-atk">ソーヴァ</a></li>
+      <!-- 他のエージェントもここに追加 -->
+    </ul>
+    <h3>🅱️ ディフェンダー</h3>
+    <ul>
+      <li><a href="#ascent-sova-def">ソーヴァ</a></li>
+      <!-- 他のエージェントもここに追加 -->
+    </ul>
+
+    <!-- AGENT LINEUPS: ASCENT SOVA -->
+    <h4 id="ascent-sova-atk">ソーヴァ（アタッカー）</h4>
+    <p>■ Aロングからのリコンボルト</p>
+    <img src="images/ascent/sova/atk_a_long.jpg" alt="Aロングのリコン">
+    
+    <p>■ Bメイン進行用リコン</p>
+    <video controls>
+      <source src="videos/ascent/sova/atk_b_main.mp4" type="video/mp4">
+    </video>
+
+    <h4 id="ascent-sova-def">ソーヴァ（ディフェンダー）</h4>
+    <p>■ Aサイト防衛用リコン</p>
+    <img src="images/ascent/sova/def_a_site.jpg" alt="Aサイト防衛">
+  </div>
+
+  <script>
+    const password = "valorant123";
+    const input = prompt("パスワードを入力してください：");
+    if (input === password) {
+      document.getElementById("main").classList.remove("hidden");
+    } else {
+      document.body.innerHTML = "<h1>❌ アクセス拒否</h1><p>パスワードが違います。</p>";
+    }
+  </script>
+</body>
+</html>
